@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>نجلاء القحطاني للمحاماة والاستشارات القانونية</title>
+    <meta
+      name="description"
+      content="نجلاء القحطاني للمحاماة والاستشارات القانونية – شريكك القانوني للنمو والاستدامة وفق رؤية السعودية 2030"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      :root {
+        --primary: #1f3f3a;
+        --secondary: #2e5b55;
+        --gold: #e7dabc;
+        --light-gold: #f5f2ea;
+        --text-gray: #6b6b6b;
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Cairo", sans-serif;
+      }
+      body {
+        line-height: 1.8;
+        color: var(--primary);
+      }
+
+      section {
+        padding: 80px 10%;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+        position: relative;
+      }
+      .section-title::after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background: var(--gold);
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        z-index: 1000;
+        background: rgba(31, 63, 58, 0.95);
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      /* اللوجو في النص */
+      .brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+      }
+
+      .brand img {
+        width: 50px;
+        height: auto;
+        transform: scale(1.5);
+        transition: transform 0.3s ease;
+      }
+
+      .brand:hover img {
+        transform: scale(1.6);
+      }
+
+      /* الناف */
+      /* nav {
+        margin-right: auto;
+      } */
+      .nav-right {
+        margin-left: auto;
+      }
+
+      .nav-left {
+        margin-right: auto;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        color: #f5f2ea;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: var(--gold);
+      }
+
+      /* Hero */
+      .hero {
+        height: 100vh;
+        margin-top: 70px;
+        background: linear-gradient(
+            rgba(31, 63, 58, 0.35),
+            rgba(31, 63, 58, 0.65)
+          ),
+          url("imgi_67_kafd-places-to-visit-in-riyadh-900 (1).jpg");
+        background-size: cover;
+        /* background-position: center top; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+      }
+      .hero h1::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: var(--gold);
+        margin: 15px auto 0;
+        animation: lineGrow 1s ease forwards;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes lineGrow {
+        to {
+          width: 80px;
+        }
+      }
+
+      .hero h1 {
+        font-family: "Amiri", serif;
+        font-size: 3.2rem;
+        color: var(--gold);
+      }
+      .hero p {
+        font-size: 1.3rem;
+        color: #e8e1cf;
+      }
+      .slogan {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        color: #f5e9c8;
+      }
+      .cta-btn {
+        margin-top: 35px;
+        background: linear-gradient(135deg, var(--gold), #b5964d);
+        color: var(--primary);
+        padding: 15px 38px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 25px rgba(198, 167, 94, 0.35);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px rgba(198, 167, 94, 0.45);
+      }
+
+      /* About */
+      .about p {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        color: var(--text-gray);
+      }
+
+      /* Vision & Mission */
+      .vision-mission {
+        background: var(--light-gold);
+      }
+      .vm-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* عمود واحد */
+        gap: 30px;
+      }
+      .box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        border-right: 5px solid var(--gold);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      .box h3 {
+        color: var(--gold);
+        margin-bottom: 15px;
+      }
+
+      .vision2030 {
+        background: linear-gradient(135deg, #1f3f3a, #2e5b55);
+        color: #fff;
+        text-align: center;
+      }
+      .vision2030 p {
+        max-width: 850px;
+        margin: auto;
+      }
+
+      /* Stats */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        text-align: center;
+      }
+      .stat h3 {
+        color: var(--gold);
+        font-size: 2.4rem;
+      }
+
+      /************************ Values *********************/
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .value-item {
+        background: var(--primary);
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        transition: var(--transition);
+      }
+      .value-item i {
+        font-size: 2rem;
+        color: var(--gold);
+        margin-bottom: 10px;
+      }
+      .value-item small {
+        display: block;
+        font-size: 0.85rem;
+        margin-top: 8px;
+        opacity: 0.85;
+      }
+      .value-item:hover {
+        background: var(--gold);
+        color: var(--primary);
+      }
+
+      /****************** Services ***********************/
+      .services {
+        background: #eef2ef;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+      .service-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border-top: 4px solid var(--gold);
+      }
+      .service-card h3 {
+        display: flex;
+        gap: 10px;
+        color: var(--primary);
+      }
+      .service-card i {
+        color: var(--gold);
+      }
+      /* Method */
+      #method {
+        padding-bottom: 160px; /* أكبر من آخر translateY */
+      }
+
+      .method-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .method-card {
+        background: #fff;
+        border: 1px solid #eee;
+        padding: 25px;
+        border-radius: 6px;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      /* السلم */
+      .method-card:nth-child(1) {
+        transform: translateY(0);
+      }
+
+      .method-card:nth-child(2) {
+        transform: translateY(40px);
+      }
+
+      .method-card:nth-child(3) {
+        transform: translateY(80px);
+      }
+
+      .method-card:nth-child(4) {
+        transform: translateY(120px);
+      }
+
+      .method-card img {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 42px;
+        height: 42px;
+        opacity: 0.75; /* نفس إحساس الرقم */
+        object-fit: contain;
+      }
+
+      /**************** Partners ***************************/
+      /* Departments */
+      .departments {
+        position: relative;
+        background: url("imgi_2_Cqos9eMXgAAaUNM.jpg") center / cover no-repeat;
+        padding: 150px 10%;
+      }
+
+      .departments::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          rgba(31, 63, 58, 0.82),
+          rgba(31, 63, 58, 0.72)
+        );
+      }
+      .section-titlee {
+        display: inline-block;
+        padding: 14px 40px;
+        border: 2px solid var(--gold);
+        color: var(--gold);
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 70px;
+      }
+
+      .departments > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .departments-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 25px;
+        justify-items: center;
+      }
+
+      /* الكرت نفسه */
+      .department-card {
+        grid-column: span 4;
+        text-align: center;
+        width: 100%;
+      }
+
+      .department-card:nth-last-child(-n + 4) {
+        grid-column: span 3;
+      }
+
+      /* الأيقونة */
+      .department-card i {
+        font-size: 2.2rem;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+
+      /* العنوان */
+      .department-card h4 {
+        color: var(--gold-soft);
+        font-size: 0.95rem;
+        font-weight: 300;
+        line-height: 1.6;
+        color: white;
+      }
+
+      .department-card img {
+        width: 48px;
+        margin-bottom: 14px;
+        filter: brightness(0) invert(1);
+        opacity: 0.9;
+      }
+
+      /* Contact */
+      .contact-info-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .contact-info h3,
+      .contact-qr h3 {
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-info i {
+        color: var(--gold); /* نفس لونك */
+      }
+
+      .social i {
+        font-size: 1.6rem;
+      }
+
+      .contact-qr {
+        text-align: center;
+      }
+
+      .contact-qr img {
+        width: 150px;
+        padding: 8px;
+        border-radius: 10px;
+        background: #fff;
+      }
+
+      /* موبايل */
+      @media (max-width: 768px) {
+        .contact-info-layout {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .contact-info p {
+          justify-content: center;
+        }
+      }
+
+      footer {
+        background: var(--primary);
+        color: #ccc;
+        text-align: center;
+        padding: 30px;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+        .vm-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero h1 {
+          font-size: 2rem;
+        }
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero h1 {
+        animation: fadeUp 1s ease forwards;
+      }
+
+      .hero p {
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+      }
+
+      .slogan {
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+      }
+
+      .cta-btn {
+        animation: fadeUp 1s ease forwards;
+        animation-delay: 0.9s;
+        opacity: 0;
+      }
+
+      /* ****************************************** */
+      .entities {
+        padding: 80px 10%;
+        background: #f8f8f8;
+      }
+
+      .entities .section-title {
+        text-align: center;
+        color: var(--gold);
+        margin-bottom: 40px;
+      }
+
+      .entity-card {
+        background: #fff;
+        border-radius: 14px;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+        width: 220px; /* عرض ثابت */
+        height: 200px; /* ارتفاع ثابت */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .entity-card img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .entity-card h4 {
+        font-size: 0.95rem;
+        color: var(--primary);
+        line-height: 1.6;
+      }
+
+      .entity-card:hover {
+        transform: translateY(-6px);
+      }
+      /* *********************************************************************** */
+      @media (max-width: 768px) {
+        .method-card {
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <body>
+    <header>
+      <!-- القائمة اليمين -->
+      <nav class="nav-right">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+        </ul>
+      </nav>
+
+      <!-- اللوجو في المنتصف -->
+      <div class="brand">
+        <img src="najla png.png" alt="نجلاء القحطاني للمحاماة" />
+      </div>
+
+      <!-- القائمة اليسار -->
+      <nav class="nav-left">
+        <ul>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#contact">التواصل</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <!-- <h1>نجلاء القحطاني</h1>
+      <p>للمحاماة والاستشارات القانونية</p> -->
+      <h1><img style="width: 500px" src="najla png(1).png" alt="" /></h1>
+      <!-- <div class="slogan">شريكك القانوني للنمو والاستدامة</div> -->
+      <a href="#contact" class="cta-btn">احجز استشارة</a>
+    </section>
+    <!-- ****************about us********************************* -->
+
+    <section id="about" class="about">
+      <h2 class="section-title">من نحن</h2>
+      <p>
+        نجلاء القحطاني للمحاماة والاستشارات القانونية هو مكتب محاماة سعودي مرخص
+        يقدم منظومة متكاملة من الخدمات القانونية باحترافية عالية ومواكبة دقيقة
+        للتطورات النظامية والتنظيمية في المملكة نضع خبرتنا القانونية المتعمقة
+        وفهمنا العملي للسوق السعودي في خدمة عملائنا من الأفراد والشركات والجهات
+        الحكومية لنكون لهم شريكا قانونيًا يُعتمد عليه في كل مرحلة
+      </p>
+    </section>
+    <!-- ****************رؤيتنا********************************* -->
+
+    <section class="vision-mission">
+      <!-- <h2 class="section-title">رؤيتنا ورسالتنا</h2> -->
+      <div class="vm-grid">
+        <div class="box">
+          <h2 class="section-title">رؤيتنا</h2>
+          <p>
+            أن نكون الخيار الأول للمنشآت الطموحة والأفراد الباحثين عن شريك
+            قانوني يُقدّم حلولآ عملية ويعزز الأمتثال ويسهم في نمو الأعمال
+            واستدامتها بثقة واحتراف
+          </p>
+        </div>
+        <div class="box">
+          <h2 class="section-title">رسالتنا</h2>
+          <p>
+            نقدم خدمات قانونية موثوقة ومتكاملة من خلال فريق يتمتع بخبرة عميقة
+            وفهم دقيق للأنظمة السعودية والسوق المحلي، ونعمل بشراكة حقيقية مع
+            عملائنا لضمان حماية مصالحهم وتحقيق أهدافهم
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision2030">
+      <h2><img style="width: 70%" src="vision2030.png" alt="" /></h2>
+      <p>
+        نمارس اعمالنا القانونية تحت تنظيم الهيئة السعودية للمحامين، وبما يواكب
+        مستهدفات رؤية المملكة 2030
+      </p>
+    </section>
+
+    <!-- ****************قيمنا********************************* -->
+
+    <section id="values">
+      <h2 class="section-title">قيمنا</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <i class="fas fa-user-tie"></i>
+          <h4>الاحترافية</h4>
+          <small>نطبق أعلى معايير الجودة القانونية في كل تعامل</small>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-scale-balanced"></i>
+          <h4>الشفافية</h4>
+          <small>نؤمن بأن الثقة تبدأ من وضوحنا مع عملائنا</small>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-handshake"></i>
+          <h4>الالتزام</h4>
+          <small>نتابع القضايا والتعاقدات باهتمام شخصي وجدية تامة </small>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-gears"></i>
+          <h4>التطوير المستمر</h4>
+          <small
+            >نواكب التغييرات التشريعية ونُطوّر أدواتنا ومهاراتنا باستمرار لضمان
+            تقديم أفضل الحلول القانونية</small
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ****************services********************************* -->
+    <section id="services" class="services">
+      <h2 class="section-title">خدماتنا القانونية</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3><i class="fas fa-gavel"></i> التقاضي والتمثيل القضائي</h3>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <i class="fas fa-file-contract"></i> الاستشارات القانونية والشرعية
+          </h3>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <i class="fas fa-file-signature"></i> صياغة العقود والاتفاقيات
+          </h3>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <i class="fas fa-building-columns"></i> الأنظمة التجارية وقطاع
+            الشركات
+          </h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-coins"></i> النزاعات الزكوية والضريبية</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-leaf"></i> الامتثال البيئي</h3>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <i class="fas fa-briefcase"></i> نظام العمل والعلاقات العمالية
+          </h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-globe"></i> الاستثمار الأجنبي</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-copyright"></i> الملكية الفكرية</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-stethoscope"></i> الخدمات القانونية الطبية</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-people-roof"></i> الأحوال الشخصية والتركات</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-city"></i> العقارات والمقاولات</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-landmark"></i> القضايا والقرارات الإدارية</h3>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-chart-line"></i> الاستثمار والتطوير العقاري</h3>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <i class="fas fa-bullhorn"></i> الأنشطة الإعلامية ورخص المؤثرين
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- ****************method********************************* -->
+
+    <section id="method">
+      <h2 class="section-title">منهجية العمل</h2>
+      <div class="method-grid">
+        <div class="method-card">
+          <img src="define.png" alt="تحديد النطاق" />
+          <h4>تحديد النطاق</h4>
+        </div>
+        <div class="method-card">
+          <img src="inquiry.png" alt="الاستطلاع وجمع المعلومات" />
+          <h4>الاستطلاع وجمع المعلومات</h4>
+        </div>
+
+        <div class="method-card">
+          <img src="patent.png" alt="البحث والتحليل القانوني" />
+          <h4>البحث والتحليل القانوني</h4>
+        </div>
+
+        <div class="method-card">
+          <img src="effective.png" alt="التنفيذ والمتابعة" />
+          <h4>التنفيذ والمتابعة</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************departments********************************* -->
+
+    <section id="departments" class="departments">
+      <h2 style="color: white" class="section-titlee">أقسامنا</h2>
+
+      <div class="departments-grid">
+        <div class="department-card">
+          <img style="width: 50px" src="contract.png" alt="تحديد النطاق" />
+          <h4>قسم العقود والاستشارات</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="litigation.png" alt="تحديد النطاق" />
+          <h4>قسم القضايا والترافع</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="skyscrapers.png" alt="تحديد النطاق" />
+          <h4>القسم التجاري</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="copyright.png" alt="تحديد النطاق" />
+          <h4>قسم الملكية الفكرية</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="licensing.png" alt="تحديد النطاق" />
+          <h4>قسم التراخيص والامتثال</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="government.png" alt="تحديد النطاق" />
+          <h4>قسم الجهات الحكومية</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="influencer.png" alt="تحديد النطاق" />
+          <h4>قسم الإعلام والمؤثرين</h4>
+        </div>
+
+        <div class="department-card">
+          <img style="width: 50px" src="company.png" alt="تحديد النطاق" />
+          <h4>قسم الحوكمة والتنظيم</h4>
+        </div>
+        <div class="department-card">
+          <img style="width: 50px" src="check.png" alt="تحديد النطاق" />
+          <h4>قسم التوثيق</h4>
+        </div>
+        <div class="department-card">
+          <img
+            style="width: 50px"
+            src="international-relations.png"
+            alt="تحديد النطاق"
+          />
+          <h4>قسم الاسثمار الاجنبي</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************entities********************************* -->
+
+    <section class="entities">
+      <h2 class="section-title">جهات تعاملنا معها</h2>
+
+      <div class="swiper entities-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide entity-card">
+            <img src="عدل.png" alt="وزارة العدل" />
+            <h4>وزارة العدل</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="مظالم.png" alt="ديوان المظالم" />
+            <h4>ديوان المظالم</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره التجاره.png" alt="وزارة التجارة" />
+            <h4>وزارة التجارة</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره الداخلية.png" alt="وزارة الداخلية" />
+            <h4>وزارة الداخلية</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره الخارجية.png" alt="وزارة الخارجية" />
+            <h4>وزارة الخارجية</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره الاستثمار.png" alt="وزارة الاستثمار" />
+            <h4>وزارة الأستثمار</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره الصحة.png" alt="وزارة الصحة" />
+            <h4>وزارة الصحة</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img src="وزاره مالية.png" alt="وزارة المالية" />
+            <h4>وزارة المالية</h4>
+          </div>
+
+          <div class="swiper-slide entity-card">
+            <img
+              src="وزاره النقل والخدمات.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>وزارة النقل والخدمات اللوجستية</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img src="الاحوال المدنية.png" alt="الاحوال المدنية" />
+            <h4>الأحوال المدنية</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img src="الجوازات.png" alt="وزارة النقل والخدمات اللوجستية" />
+            <h4>الجوازات</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img src="غرفة الرياض.png" alt="وزارة النقل والخدمات اللوجستية" />
+            <h4>غرفة الرياض</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img src="منصة اعتماد.png" alt="وزارة النقل والخدمات اللوجستية" />
+            <h4>منصة اعتماد</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img src="منصة خبر.png" alt="وزارة النقل والخدمات اللوجستية" />
+            <h4>منصة خبرة</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="وزاره الموارد البشرية والتنمية.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>وزاره الموارد البشريةوالتنمية الاجتماعية</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="وزاره الشؤون البلدية والتنمية.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>وزاره الشؤون البلدية والقروية والاسكان</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="مؤسسة العامة للتامينات.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="الهيئة العامة لتنظيم الاعلام.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>الهيئة العامة لتنظيم الاعلام</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="الهيئه العامة للعقار.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>الهيئة العامة للعقار</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="الهيئة السعودية للملكية الفكرية.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>الهيئة السعودية للملكية الفكرية</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="الهيئة السعودية للمراجعين والمحاسبين.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>الهيئة السعودية للمراجعين والمحاسبين</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="المركز السعودي للتحكم التجاري.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>المركز السعودي للتحكم التجاري</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="هيئة الزكاه والضريبة والجمارك.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>هيئة الزكاة والضريبة والجمارك</h4>
+          </div>
+          <div class="swiper-slide entity-card">
+            <img
+              src="الامانة العامة للجان الضريبية.png"
+              alt="وزارة النقل والخدمات اللوجستية"
+            />
+            <h4>الأمانة العامة للجان الضريبية</h4>
+          </div>
+
+          <!-- كمل بنفس الطريقة لباقي الجهات -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************contact********************************* -->
+    <section id="contact">
+      <h2 class="section-title">تواصلو معنا</h2>
+
+      <div class="contact-container contact-info-layout">
+        <!-- بيانات التواصل -->
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+
+          <p class="social">
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>lawyernajlaalqa</span>
+          </p>
+
+          <p class="social">
+            <a
+              href="https://wsend.co/966532996188"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/najla-alqahtani/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <span>najla-alqahtani</span>
+          </p>
+
+          <!-- <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span>lawyernajlaalqahtani@gmail.com</span>
+          </p> -->
+
+          <p class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            KSA - Riyadh - Olaya
+          </p>
+        </div>
+
+        <!-- QR -->
+        <div class="contact-qr">
+          <h3>تواصل معنا</h3>
+          <img src="watsapp_qr.png" alt="QR Code" />
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2025 نجلاء القحطاني للمحاماة والاستشارات القانونية</footer>
+  </body>
+  <script>
+    new Swiper(".entities-swiper", {
+      loop: true,
+      spaceBetween: 25,
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.5,
+        },
+        576: {
+          slidesPerView: 2.5,
+        },
+        768: {
+          slidesPerView: 3.5,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  </script>
+</html>
